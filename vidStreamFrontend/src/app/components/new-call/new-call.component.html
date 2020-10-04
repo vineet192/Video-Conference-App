@@ -1,0 +1,16 @@
+<mat-card class="welcome-screen">
+    <div class="card-header">
+        <h1>Seamless video calling !</h1>
+    </div>
+    <div class="container">
+        <button mat-raised-button color="primary" (click)="host()">Host</button>
+        <div class="enter-id">
+            <form [formGroup]="joinGroupForm" (ngSubmit)="joinGroup(joinGroupForm.value)">
+                <mat-form-field class="example-form-field">
+                    <mat-label>Enter ID</mat-label>
+                    <input matInput type="text" formControlName="call_id">
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+</mat-card>

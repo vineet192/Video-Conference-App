@@ -1,0 +1,9 @@
+<div>
+    <h1>You are in room {{ this.hostId}}</h1>
+    <div class="vidscreen" *ngFor="let source of sources">
+        <app-video-tile [sourceObj]="source"></app-video-tile>
+    </div>
+    <div class="btnrow">
+        <button mat-button (click)="initP2p()">Start streaming</button>
+    </div>
+</div>

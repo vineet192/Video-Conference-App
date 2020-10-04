@@ -1,0 +1,31 @@
+.welcome-screen {
+    position: fixed;
+    padding: 15px;
+    width : 500px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .card-header {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .enter-id{
+    margin-top : 10px;
+  }
+  
+  button{
+    margin : 10px;
+  }
+  
+  

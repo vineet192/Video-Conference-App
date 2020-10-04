@@ -1,0 +1,13 @@
+.vidscreen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btnrow {
+  display: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
