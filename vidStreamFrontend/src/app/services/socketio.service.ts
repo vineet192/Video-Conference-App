@@ -62,6 +62,7 @@ export class SocketioService {
   }
 
   addPeer(data): void {
+    //Add the peer only if not already in the PeersMap.
     if (!this.peersMap[data.caller]) {
       console.log('Adding peer...');
       var peer = new SimplePeer({
@@ -79,7 +80,9 @@ export class SocketioService {
           recipient: data.caller,
         });
       });
-    } else {
+    }
+    //If not, simply access the peer and signal back.
+    else {
       console.log('This peer already exists in map');
       this.peersMap[data.caller].signal(data.signal);
     }
