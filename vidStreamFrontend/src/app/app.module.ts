@@ -12,6 +12,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { CallScreenComponent } from './components/call-screen/call-screen.component';
 import { NewCallComponent } from './components/new-call/new-call.component';
@@ -29,6 +32,7 @@ import { VideoTileComponent } from './components/video-tile/video-tile.component
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
+    MatSnackBarModule,
     AppRoutingModule,
   ],
   providers: [SocketioService],
